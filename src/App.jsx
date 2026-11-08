@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
-  'https://nedpupblqyrcjbblnfje.supabase.co',
-  'sb_publishable_Pp943k6JZKzKJShasr0sCg_Z63aP76z'
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_ANON_KEY
 );
 
 const WHATSAPP = '966509332872';
